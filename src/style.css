@@ -1,0 +1,83 @@
+p {
+  margin: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 100vh;
+  gap: 20px;
+}
+
+form.disabled {
+  pointer-events: none;
+  opacity: 50%;
+}
+
+.my {
+  background-color: greenyellow;
+}
+
+.info {
+  background-color: antiquewhite;
+}
+
+.error {
+  background-color: red;
+}
+
+.error::before {
+  content: "error: ";
+}
+
+.info::before {
+  content: "info: ";
+}
+
+.received {
+  background-color: yellow;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+#field {
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+#field,
+.row {
+  gap: 1px;
+  background-color: black;
+}
+
+.cell {
+  aspect-ratio: 1 / 1;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+#messages {
+  width: 100%;
+  height: 300px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#status {
+  width: 100px;
+}
