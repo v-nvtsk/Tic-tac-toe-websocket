@@ -1,0 +1,5 @@
+{
+  "watch": ["api"],
+  "ext": "ts,json",
+  "ignore": ["api/**/*.test.ts", "node_modules"]
+}
